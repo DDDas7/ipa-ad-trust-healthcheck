@@ -1,8 +1,10 @@
 # IPA - AD Trust Health Check Script
 
 This repository contains a howto and the required artifacts to use 
-IPA - AD Trust Health Check Script in Red Hat Enterprise Linux 7 and
-Red Hat Enterprise Linux 8 servers.
+IPA - AD Trust Health Check Script in following servers.
+
+* Red Hat Enterprise Linux 7
+* Red Hat Enterprise Linux 8
 
 ## Motivation
 
@@ -27,11 +29,11 @@ be broken into two major points of interaction:
 
 Successful working of IPA - AD Trust environment depends on multiple factors. 
 The objective of this Python  script is to perform a checklist to validate the 
-factors leading to successful creation of IPA - AD trust and post trust setup.
+factors leading to a successful creation of IPA - AD Trust and also, a post-Trust setup.
 
 ## User experience
 
-IPA - AD Trust creation or working can fail or face issue due any of the 
+IPA - AD Trust creation or its operations may experience issues because of any of the 
 following common factors:
 
 * Firewall
@@ -40,32 +42,29 @@ following common factors:
 * Kerberos
 
 To successfully troubleshoot any issue, the Administrator should be aware 
-of all the possible checks to be performed Pre and Post IPA - AD trust 
+of all the possible checks to be performed Pre and Post IPA - AD Trust 
 creation.
-
-Mostly this specific lack of knowledge leads to delay in troubleshooting 
-IPA - AD Trust environment issues.
 
 ## Script Features
 
-The script will perform following checks Pre and Post Trust creation.
+The script will perform the following checks Pre and Post Trust creation.
 
-1. Pre IPA - AD trust creation checks
+1. Pre IPA - AD Trust creation checks:
 
 	* Checking AD Server Ping Reachability
 	* Checking AD Server Port Reachability
 	* IPA Server Ipv6 enabled
-	* Timesync Difference To AD Server
+	* Timesync Difference to AD Server
 	* AD Domain Name check
 	* Local configuration for IPA - AD Trust
 	* IPA DNS Forwarder Check
 	* AD Domain DNS Validation
 
-2. Post IPA - AD trust creation checks
+2. Post IPA - AD Trust creation checks:
 
 	* Checking AD Server Ping Reachability
 	* Checking AD Server Port Reachability
-	* Timesync Difference To AD Server
+	* Timesync Difference to AD Server
 	* Local configuration for IPA - AD Trust
 	* DNSSec Check
 	* IPA DNS Forwarder Check
@@ -77,15 +76,10 @@ The script will perform following checks Pre and Post Trust creation.
 
 ## Setting up the environment
 
-This section describes the detailed steps to run the script.
-You'll need an IPA server up and running and you need to have 
-some basic prerequisite steps performed.
+This section describes the detailed steps that are required to run the script.
+You will need an IPA server up and running and you need to have some basic prerequisite steps performed.
 
 ### 1. Prerequisites
-
-This section describes the detailed steps to run the script. 
-You'll need an IPA server up and running and you need to have 
-some basic prerequisite steps performed.
 
 * [Prerequisites for Installing a Server](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/linux_domain_identity_authentication_and_policy_guide/installing-ipa)
 
@@ -97,7 +91,7 @@ some basic prerequisite steps performed.
 ### 2. Configure Virtual Python Environment For The Script
 
 This python script runs on [venu](https://docs.python.org/3/tutorial/venv.html) 
-virtual environment to avoid interferring with existing modules.
+virtual environment to avoid interfering with the existing modules.
 
 <span style="color:blue"> Note:</span> The script performs only read
 operations and does NOT make any changes in the system. 
@@ -147,5 +141,5 @@ In no particular order and without going too deep into details:
 
 ## Disclaimers
 
-* The script is an individual effort and does NOT in anyway supported by any company.
-* The script perform read only operation and can be used at user's discretion.
+* The script is an individual effort and is NOT in any way supported by any organization.
+* The script performs read only operation and can be used at User's discretion.

@@ -47,7 +47,8 @@ creation.
 
 ## Script Features
 
-The script will perform the following checks Pre and Post Trust creation.
+The script will perform the following validation checks based on the Pre or 
+Post Trust creation stage.
 
 1. Pre IPA - AD Trust creation checks:
 

@@ -103,7 +103,6 @@ Steps to configure the Python `venu` virtual environment are listed below.
 	```
 	# git clone https://github.com/DeepakDas7/ipa-ad-trust-healthcheck
 	```
-
 2. Configure the Python Virtual Environment
 
 	```
@@ -113,14 +112,12 @@ Steps to configure the Python `venu` virtual environment are listed below.
 	# python -m pip install -r requirements.txt
 	# python -m pip list
 	```
-
 3. Run the script as below
 
 	```
 	# kinit admin
 	# ./ipa-ad-trust-healthcheck.py
 	```
-
 4. Below Menu will be displayed
 
 	```
